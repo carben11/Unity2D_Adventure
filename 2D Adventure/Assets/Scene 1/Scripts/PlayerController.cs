@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         //Handle facing direction
         if(moveHorizontal != Mathf.Sign(rb.velocity.x) && moveHorizontal != 0f)
         {
-            rb.transform.localScale = new Vector3(moveHorizontal, 1, 1);
+            rb.transform.localScale = new Vector3(moveHorizontal * -1f, 1, 1);
         }
 
         //Handle dash
